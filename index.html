@@ -83,13 +83,13 @@
     <div>
         <hr>
         
-        <video id="playVideo" width="480" height="480" muted>
+        <video id="playVideo" width="480" height="480" preload="auto">
             <source src="Media/video1.mp4" type="video/mp4">
           </video>
         
-        <audio id="playAudio">
+        <audio id="playAudio" preload="auto">
             <source src="Media/getoverhere.mp3" type="audio/mp3">
-            <source src="Media/getoverhere.ogg" type="audio/ogg"> 
+            <source src="Media/getoverhere.ogg" type="audio/ogg">
         </audio>
         
         <button onclick="playAll()" type="button">PLAY</button>
@@ -114,11 +114,11 @@
     </table2>
     <script>
         
-        //Deklarer at vid og aud er mine media filer//
+        //Deklarerer at vid og aud er mine media filer//
         let vid = document.getElementById ("playVideo");
         let aud = document.getElementById ("playAudio");
         
-        // Denne funksjonen kjører begge samtidig i en "play" knapp.//
+        //Denne funksjonen kjører begge samtidig i en "play" knapp.//
         function playAll(){
             vid.play();
             aud.play();
